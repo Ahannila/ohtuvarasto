@@ -1,6 +1,7 @@
 [MASTER]
 
 ignore=tests,index.py
+load-plugins=pylint.extensions.mccabe
 
 [MESSAGE CONTROL]
 
@@ -17,7 +18,12 @@ disable=raw-checker-failed,
         missing-class-docstring
 
 [FORMAT]
+max-line-length:80
+
 
 [REFACTORING]
+max-nested-blocks:2
 
 [DESIGN]
+max-statements=15
+max-complexity=3
